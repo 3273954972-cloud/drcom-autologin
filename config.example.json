@@ -1,0 +1,21 @@
+{
+    "PortalHost":  "portal.example.edu.cn",
+    "PortalPath":  "/eportal/",
+    "Service":  "移动",
+    "UserId":  "",
+    "ProbeUrls":  [
+                      "http://www.msftconnecttest.com/connecttest.txt",
+                      "http://connect.rom.miui.com/generate_204",
+                      "http://223.5.5.5/",
+                      "http://1.1.1.1/"
+                  ],
+    "OnlineCheckUrls":  [
+                            "http://www.msftconnecttest.com/connecttest.txt",
+                            "http://connect.rom.miui.com/generate_204"
+                        ],
+    "UseSystemProxy":  false,
+    "LoginRetries":  3,
+    "RetryDelaySec":  4,
+    "LogKeepDays":  30,
+    "LogDir":  ""
+}
