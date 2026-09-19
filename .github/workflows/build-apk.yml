@@ -21,8 +21,15 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      # 刻意不用 android-actions/setup-android：它默认要装 'tools' 包，
+      # 而新版 sdkmanager 已删除该包，会直接报 "Failed to find package 'tools'"。
+      # ubuntu-latest runner 自带 Android SDK，ANDROID_HOME 已就位。
+      - name: Show Android SDK location
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          ls -1 "$ANDROID_HOME" || true
+          ls -1 "$ANDROID_HOME/platforms" || true
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
