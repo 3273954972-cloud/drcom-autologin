@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">校园网自动认证</string>
+
+    <string name="tip_intro">先断开再重连 WiFi，等浏览器跳出登录页时把地址栏里的主机部分填到下面（形如 219.230.34.5）。拿不准就点「自动探测」。</string>
+
+    <string name="label_host">Portal 地址</string>
+    <string name="hint_host">例如 219.230.34.5 或 host:8080</string>
+
+    <string name="label_path">Portal 路径</string>
+    <string name="hint_path">默认 /eportal/</string>
+
+    <string name="label_service">服务（运营商）</string>
+    <string name="hint_service">移动 / 联通 / 电信 / 仅限校内，留空用服务端默认</string>
+
+    <string name="label_user">学号 / 用户名</string>
+    <string name="hint_user">智慧校园统一身份认证那套</string>
+
+    <string name="label_pwd">密码</string>
+    <string name="hint_pwd">与统一身份认证一致</string>
+
+    <string name="label_interval">守护间隔（秒）</string>
+    <string name="hint_interval">默认 20，最小 10</string>
+
+    <string name="label_enabled">启用后台自动登录（开机自启）</string>
+    <string name="label_status">状态</string>
+
+    <string name="btn_detect">自动探测 Portal</string>
+    <string name="btn_test">测试登录</string>
+    <string name="btn_save">保存配置</string>
+
+    <string name="status_idle">尚未运行</string>
+
+    <string name="msg_detecting">正在探测 portal…</string>
+    <string name="msg_testing">正在测试登录…</string>
+    <string name="msg_saved">配置已保存</string>
+    <string name="detect_ok">探测到 portal：%1$s</string>
+    <string name="detect_failed">探测失败：没抓到 portal 劫持。先断开重连 WiFi 再试，或手动填写地址。</string>
+    <string name="need_config">配置不完整：portal 地址、学号、密码都要填</string>
+    <string name="test_ok">登录成功</string>
+    <string name="test_already_online">当前已在线（未认证时应该是掉线状态，若已能上网说明不需要登录）</string>
+    <string name="test_captcha">portal 要求验证码，请先用浏览器手动登录一次</string>
+    <string name="test_fail">登录失败：%1$s</string>
+    <string name="err_prefix">出错：</string>
+    <string name="daemon_started">后台守护已启动</string>
+    <string name="daemon_stopped">后台守护已停止</string>
+</resources>
